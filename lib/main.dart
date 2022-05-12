@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: MainScreen.routeName,
       routes: {
-        '/': (context) => const MainScreen(),
-        '/detail': (context) => const DetailScreen(),
+        MainScreen.routeName: (context) => const MainScreen(),
+        DetailScreen.routeName: (context) => const DetailScreen(),
       },
       home: const MainScreen(),
     );
